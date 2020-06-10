@@ -1,4 +1,4 @@
-version: '3.1'
+version: '2.2'
 services:
   wordpress:
     image: wordpress:fpm
@@ -22,3 +22,5 @@ services:
       MYSQL_ROOT_PASSWORD: example
     ports:
       - "3306:3306"
+  volumes:
+    wp:
